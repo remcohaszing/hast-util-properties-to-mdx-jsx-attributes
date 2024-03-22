@@ -1,6 +1,6 @@
 {
   "name": "hast-util-properties-to-mdx-jsx-attributes",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Transform hast properties into mdxJsxAttribute nodes",
   "keywords": [
     "hast",
