@@ -1,0 +1,8 @@
+root: true
+extends:
+  - remcohaszing
+  - remcohaszing/typechecking
+rules:
+  '@typescript-eslint/no-invalid-void-type': off
+  '@typescript-eslint/no-unsafe-argument': off
+  no-param-reassign: off
