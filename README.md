@@ -15,8 +15,6 @@ Transform [hast](https://github.com/syntax-tree/hast)
 - [Usage](#usage)
 - [API](#api)
   - [`propertiesToMdxJsxAttributes(properties, options?)`](#propertiestomdxjsxattributesproperties-options)
-    - [Arguments](#arguments)
-    - [Returns](#returns)
 - [Compatibility](#compatibility)
 - [License](#license)
 
