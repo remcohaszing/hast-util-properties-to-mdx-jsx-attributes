@@ -100,9 +100,7 @@ export function propertiesToMdxJsxAttributes(
         : spaces(original)
       : original === true
         ? null
-        : typeof original === 'number'
-          ? String(original)
-          : original
+        : String(original)
 
     if (options?.transform) {
       value = options.transform(name, value, original)
