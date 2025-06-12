@@ -35,7 +35,7 @@ features, but you don’t want to transform all child nodes.
 For example, this plugin prefixes all `id` attributes on hast elements with the `id` prop passed to
 the MDX document.
 
-```typescript
+```ts
 import { type Root } from 'hast'
 import { propertiesToMdxJsxAttributes } from 'hast-util-properties-to-mdx-jsx-attributes'
 import { type Plugin } from 'unified'

@@ -37,9 +37,9 @@ export interface PropertiesToMdxJsxAttributesOptions {
    */
   transform?: (
     name: string,
-    value: string | null,
+    value: null | string,
     original: (number | string)[] | number | string | true
-  ) => Expression | string | null | undefined | void
+  ) => Expression | null | string | undefined | void
 }
 
 /**
@@ -94,7 +94,7 @@ export function propertiesToMdxJsxAttributes(
       continue
     }
 
-    let value: Expression | string | null | undefined | void = Array.isArray(original)
+    let value: Expression | null | string | undefined | void = Array.isArray(original)
       ? info.commaSeparated
         ? commas(original)
         : spaces(original)
