@@ -1,8 +1,9 @@
+import type { Expression } from 'estree'
+import type { Properties } from 'hast'
+import type { MdxJsxAttribute } from 'mdast-util-mdx-jsx'
+
 import { stringify as commas } from 'comma-separated-tokens'
-import { type Expression } from 'estree'
 import { valueToEstree } from 'estree-util-value-to-estree'
-import { type Properties } from 'hast'
-import { type MdxJsxAttribute } from 'mdast-util-mdx-jsx'
 import { find, hastToReact, html, svg } from 'property-information'
 import { stringify as spaces } from 'space-separated-tokens'
 import styleToObject from 'style-to-js'

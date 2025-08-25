@@ -36,9 +36,10 @@ For example, this plugin prefixes all `id` attributes on hast elements with the 
 the MDX document.
 
 ```ts
-import { type Root } from 'hast'
+import type { Root } from 'hast'
+import type { Plugin } from 'unified'
+
 import { propertiesToMdxJsxAttributes } from 'hast-util-properties-to-mdx-jsx-attributes'
-import { type Plugin } from 'unified'
 import { visit } from 'unist-util-visit'
 
 const rehypeMdxPrefixId: Plugin<[], Root> = () => (ast) => {
