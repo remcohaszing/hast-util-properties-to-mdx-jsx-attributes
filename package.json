@@ -30,11 +30,9 @@
   "dependencies": {
     "@types/estree": "^1.0.0",
     "@types/hast": "^3.0.0",
-    "comma-separated-tokens": "^2.0.0",
     "estree-util-value-to-estree": "^3.0.0",
     "mdast-util-mdx-jsx": "^3.0.0",
     "property-information": "^7.0.0",
-    "space-separated-tokens": "^2.0.0",
     "style-to-js": "^1.0.0"
   },
   "devDependencies": {

@@ -2,10 +2,8 @@ import type { Expression } from 'estree'
 import type { Properties } from 'hast'
 import type { MdxJsxAttribute } from 'mdast-util-mdx-jsx'
 
-import { stringify as commas } from 'comma-separated-tokens'
 import { valueToEstree } from 'estree-util-value-to-estree'
 import { find, hastToReact, html, svg } from 'property-information'
-import { stringify as spaces } from 'space-separated-tokens'
 import styleToObject from 'style-to-js'
 
 export interface PropertiesToMdxJsxAttributesOptions {
@@ -96,9 +94,7 @@ export function propertiesToMdxJsxAttributes(
     }
 
     let value: Expression | null | string | undefined | void = Array.isArray(original)
-      ? info.commaSeparated
-        ? commas(original)
-        : spaces(original)
+      ? original.join(info.commaSeparated ? ', ' : ' ').trim()
       : original === true
         ? null
         : String(original)
