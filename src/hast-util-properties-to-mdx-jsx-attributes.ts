@@ -13,14 +13,14 @@ export interface PropertiesToMdxJsxAttributesOptions {
    *
    * @default 'react'
    */
-  elementAttributeNameCase?: 'html' | 'react'
+  elementAttributeNameCase?: 'html' | 'react' | undefined
 
   /**
    * The space the hast properties are in.
    *
    * @default 'html'
    */
-  space?: 'html' | 'svg'
+  space?: 'html' | 'svg' | undefined
 
   /**
    * A function to transform an attribute value.
@@ -34,11 +34,13 @@ export interface PropertiesToMdxJsxAttributesOptions {
    * @returns
    *   The new value to use instead of the value passed.
    */
-  transform?: (
-    name: string,
-    value: null | string,
-    original: (number | string)[] | number | string | true
-  ) => Expression | null | string | undefined | void
+  transform?:
+    | ((
+        name: string,
+        value: null | string,
+        original: (number | string)[] | number | string | true
+      ) => Expression | null | string | undefined | void)
+    | undefined
 }
 
 /**
